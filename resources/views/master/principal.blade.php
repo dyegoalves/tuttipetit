@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>SYSLINCAM :  @yield('title')</title>
+  <title> TUTTI PETIT :  @yield('title')</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -17,11 +16,9 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css">
 </head>
-
 <body class="sidebar-mini control-sidebar-slide-closed text-sm">
   <!-- Site wrapper -->
   <div class="wrapper">
-
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
       <!-- Left navbar links -->
@@ -30,7 +27,6 @@
           <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
         </li>
       </ul>
-
       <!-- SEARCH FORM -->
       <form class="form-inline ml-3">
         <div class="input-group input-group-sm">
@@ -42,25 +38,8 @@
           </div>
         </div>
       </form>
-
       <!-- Right navbar links -->
       <ul class="navbar-nav ml-auto">
-
-
-        <li class="nav-item">
-          <a class="nav-link"  target="_blanck" data-widget="*" data-slide="true" href="https://github.com/dyegoalves">
-            <i class="fas fa-industry"></i> Desenvolvido por @DYSATECH v0.1.0
-          </a>
-        </li>
-
-
-        <li class="nav-item">
-          <a class="nav-link  " data-widget="*" data-slide="true" href="#">
-            @inject('func', 'App\Http\Controllers\Services\DataHoraController')
-            {{$func->dataext() }}
-          </a>
-        </li>
-        
          <li class="nav-item">
           <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#">
             <i class="fas fa-th-large"></i>
@@ -73,9 +52,9 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href="/" class="brand-link">
-        <img src="adminlte302/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+        <img src="adminlte302/dist/img/logo1.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
           style="opacity: .8">
-        <span class="brand-text font-weight-light">SYSLINCAM</span>
+        <span class="brand-text font-weight-light">TUTTI PETIT</span>
       </a>
       <!-- Sidebar -->
       <div class="sidebar">
@@ -92,8 +71,7 @@
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column nav-child-indent" data-widget="treeview" role="menu"
             data-accordion="false">
-            <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+            <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
             <li class="nav-item has-treeview">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-home"></i>
@@ -129,24 +107,20 @@
       </div>
       <!-- /.sidebar -->
     </aside>
-
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">
-   
       <!-- Content Header (Page header) -->
       @yield('content')
-   
     </div>
-
     <!-- /.content-wrapper -->
     <footer class="main-footer">
       <div class="float-right d-none d-sm-block">
-        <b>Version</b> 3.0.2
+        <b>Version</b> 0.1.0
       </div>
-      <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
-      reserved.
+         <strong> <i class="fas fa-industry"></i> Desenvolvido por <a target="blank" href="https://github.com/dyegoalves/tuttipetit">@DYSATECH v0.1.0</a>
+         @inject('func', 'App\Http\Controllers\Services\DataHoraController')
+                 {{$func->dataext() }}
     </footer>
-
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
       <!-- Control sidebar content goes here -->
@@ -155,7 +129,6 @@
   </div>
   <!-- ./wrapper -->
   <!-- jQuery -->
-
   <script src="adminlte302/plugins/jquery/jquery.min.js"></script>
   <!-- Bootstrap 4 -->
   <script src="adminlte302/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -164,5 +137,4 @@
   <!-- AdminLTE for demo purposes -->
   <script src="adminlte302/dist/js/demo.js"></script>
 </body>
-
 </html>

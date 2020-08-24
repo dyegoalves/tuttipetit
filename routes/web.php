@@ -18,6 +18,3 @@ Route::get('/', function () {
 Route::get('/calculo', function () {
     return view('forms.calculo');
 });
-
-
-Route::post('/salvarcalculo', "services\DataHoraController@salvarcalculo")->name('salvarcalculo');
